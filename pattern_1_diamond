@@ -1,0 +1,34 @@
+package super_150;
+import java.util.Scanner;
+public class pattern_1_diamond {
+	public static void main(String args[]) {
+	Scanner sc=new Scanner(System.in);
+	int n=sc.nextInt();
+	int i=1,j,k;
+	int star=1;
+	int space=(n-1)/2;
+    while(i<=n) {
+		j=1;
+		while(j<=space) {
+			System.out.print("  ");
+			j++;}
+			k=1;
+			while(k<=star){
+						System.out.print("* ");
+						k++;
+				}
+			if(i>=(n+1)/2) {
+				i++;
+				space++;
+				star-=2;}
+			else {
+				
+			i++;
+			space--;
+			star+=2;}
+				
+					
+		System.out.println();}}
+
+	}
+
