@@ -1,0 +1,14 @@
+package super_150;
+import java.util.*;
+public class farehn_to_cel {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int min=sc.nextInt();
+		int max=sc.nextInt();
+		int step=sc.nextInt();
+		for(int i=min;i<=max;i+=step) {
+			double cel=((i-32)*0.55);
+			System.out.println(i+" "+(int)cel);
+		}
+	}
+}
