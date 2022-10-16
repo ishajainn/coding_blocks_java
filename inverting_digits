@@ -1,0 +1,24 @@
+package super_150;
+import java.util.*;
+public class inverting_digits{
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		int c=0,i=0;
+		int n=sc.nextInt();
+		int num=n,c1=0;
+		while(num>0){
+			num=num/10;
+			c1++;}
+		int arr[]=new int[c1];
+		while(n>0){
+			int nes=n%10;
+			if(n!=9 && (9-nes)<nes){
+				arr[i]=(9-nes);}
+			else{
+				arr[i]=nes;}
+			i++;
+			n=n/10;}
+		int num2=0;
+		for(int j=c1-1;j>=0;j--){
+			num2=num2*10+arr[j];}
+		System.out.println(num2);}}
