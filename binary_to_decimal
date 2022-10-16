@@ -1,0 +1,21 @@
+package super_150;
+import java.util.*;
+import java.lang.Math;
+public class binary_to_decimal {
+	public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		int j=0;
+		int n=0;
+		while(num>0) {
+			int nes=num%10;
+			n+=nes *(Math.pow(2,j));
+			num=num/10;
+			j++;
+			
+		}
+		System.out.println(n);
+		
+	}
+
+}
