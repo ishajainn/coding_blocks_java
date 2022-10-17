@@ -1,0 +1,57 @@
+package super_150;
+import java.lang.*;
+import java.util.*;
+public class anagram {
+	 public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+	        String s1 = sc.nextLine();
+	        String s2 = sc.nextLine();
+	        s1 = s1.toLowerCase();
+	        s2 = s2.toLowerCase();
+	        System.out.println(s1);
+	        System.out.println(s2);
+
+
+	        char[] arr1 = s1.toCharArray();
+	        char[] arr2 = s2.toCharArray();
+	        System.out.println(arr1);
+	        System.out.println(arr2);
+
+	        Arrays.sort(arr1);
+	        Arrays.sort(arr2);
+	        System.out.println(arr1);
+	        System.out.println(arr2);
+
+	        int c = 0;
+
+	        if(arr1.length == arr2.length){
+
+	            for(int i=0;i<arr1.length;i++){
+	                if(arr1[i] == arr2[i]){
+	                    c = 1;
+
+	                }
+	                else{
+	                    c=0;
+	                    break;
+	                }
+
+	            }
+	            }
+	        else{
+	            System.out.println("Not Anagrams");
+	        }
+
+	        if(c==1){
+	            System.out.println("Anagrams");
+	        }
+	        else{
+	            System.out.println("Not Anagrams");
+	        }
+
+	    
+	        
+	        
+	    }
+	
+}
