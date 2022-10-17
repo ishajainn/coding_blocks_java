@@ -1,0 +1,19 @@
+package super_150;
+import java.util.*;
+public class series {
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		int i=1;
+		int s;
+		int n=sc.nextInt();
+		int n1=sc.nextInt();
+		while(i<=n){
+			s=3*i+2;
+			if(s%n1!=0){
+				System.out.println(s);
+			}
+			i++;
+		}
+		}
+
+}
